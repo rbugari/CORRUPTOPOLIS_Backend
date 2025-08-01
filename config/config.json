@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "u136155607_admin",
+    "password": "A2321rfb!",
+    "database": "u136155607_costapobre",
+    "host": "srv496.hstgr.io",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "u136155607_admin",
+    "password": "A2321rfb!",
+    "database": "u136155607_costapobre",
+    "host": "srv496.hstgr.io",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "u136155607_admin",
+    "password": "A2321rfb!",
+    "database": "u136155607_costapobre",
+    "host": "srv496.hstgr.io",
+    "dialect": "mysql"
+  }
+}

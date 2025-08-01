@@ -1,0 +1,7 @@
+node_modules/
+package-lock.json
+.package-lock.json
+# Archivos de variables de entorno - ¡No subir a Git!
+.env 
+
+_working_backup/

@@ -1,0 +1,1 @@
+feat: Reimplementación de características y correcciones sin secretos en el historial.

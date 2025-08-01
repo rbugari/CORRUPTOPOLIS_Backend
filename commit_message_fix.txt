@@ -1,0 +1,1 @@
+fix: Eliminar Groq API Key de seeder por seguridad.
