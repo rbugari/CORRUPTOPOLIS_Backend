@@ -8,6 +8,7 @@ const dbConfig = {
     username: process.env.DB_USER_DEV,
     password: process.env.DB_PASSWORD_DEV,
     host: process.env.DB_HOST_DEV,
+    port: process.env.DB_PORT_DEV || 3306,
     dialect: 'mysql',
     logging: false,
   },
@@ -16,6 +17,7 @@ const dbConfig = {
     username: process.env.DB_USER_PROD,
     password: process.env.DB_PASSWORD_PROD,
     host: process.env.DB_HOST_PROD,
+    port: process.env.DB_PORT_PROD || 3306,
     dialect: 'mysql',
     logging: false,
   },
@@ -27,11 +29,11 @@ const sequelize = new Sequelize(
   dbConfig[env].password,
   {
     host: dbConfig[env].host,
-    port: process.env.DB_PORT_PROD || 3306, // Agregar esta línea
+    port: dbConfig[env].port,
     dialect: dbConfig[env].dialect,
     logging: dbConfig[env].logging,
     dialectOptions: {
-      connectTimeout: 60000, // 60 segundos
+      connectTimeout: 60000,
       acquireTimeout: 60000,
       timeout: 60000,
     }
