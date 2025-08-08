@@ -19,7 +19,7 @@ const gameConfigData = [
   },
   {
     config_key: 'MAX_PLAN_WORDS',
-    config_value: '150',
+    config_value: '300',
     description: 'Número máximo de palabras para el plan del jugador.',
   },
   
